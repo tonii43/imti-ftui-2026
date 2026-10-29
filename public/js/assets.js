@@ -48,7 +48,7 @@ export function collectAssets() {
   const add = (group, key, kind, note, size) =>
     list.push({ group, key, kind, ext: EXT[kind][0], path: `public/assets/${key}.${EXT[kind][0]}`, note, size });
 
-  add('Brand', GLOBAL.logoHeader.key, 'logo', 'Logo lingkaran di header (hitam-navy, ikon kuning). Latar transparan.', '256×256 px');
+  add('Brand', GLOBAL.logoHeader.key, 'logo', 'Logo IMTI asli untuk header (bentuk bebas, tinggi tampil ±45 px). Latar transparan.', '256×256 px');
   add('Brand', GLOBAL.logoLotus.key, 'logo', 'Logo bunga teratai + riak air, WARNA PUTIH, latar transparan. Dipakai di Home (Makna) & diagram Makna Logo.', '1600×960 px');
   add('Brand', 'brand/favicon', 'logo', 'Ikon tab browser (favicon) — versi persegi dari logo IMTI. Latar boleh transparan.', '512×512 px');
   add('Brand', GLOBAL.ogImage.key, 'photo', 'Gambar pratinjau saat link dibagikan (WhatsApp/IG). Rasio 1.91:1.', '1200×630 px');
