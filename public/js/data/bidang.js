@@ -7,8 +7,10 @@
    - BPH  : heads (kepala), wakil (wakil kepala), staf (staf ahli)
    - bp   : daftar nama Badan Pengurus (Teknik Industri 2025)
    - programs: program kerja (dipakai di halaman bidang & Recap)
-   Foto otomatis dicari di /public/assets/bidang/<slug>/… (lihat ASSETS.md).
+   Foto otomatis dicari di /public/assets/bidang/<slug>/… dengan nama pendek orangnya (bp-carissa.jpg, bph-taqiyyah.png; lihat ASSETS.md).
    ========================================================== */
+
+import { slugify } from '../util.js';
 
 const A24 = 'Teknik Industri 2024';
 const A25 = 'Teknik Industri 2025';
@@ -339,24 +341,44 @@ const raw = [
 
 const pad = (n) => String(n).padStart(2, '0');
 
+/* Nama file foto = nama pendek orang (tanpa angka), mis. bp-carissa.jpg, bph-taqiyyah.png.
+   Awalan "Muhammad/Muhamad/Ahmad/M." dilewati; kalau kembar dalam satu folder, ditambah kata berikutnya. */
+const SKIP = new Set(['muhammad', 'muhamad', 'mohammad', 'ahmad', 'm', 'moh', 'al', 'el']);
+const tokens = (name) => {
+  const t = slugify(name).split('-').filter(Boolean);
+  const rest = t.filter((w, i) => !(i === 0 && SKIP.has(w)) && w.length > 1);
+  return rest.length ? rest : t;
+};
+function shortNames(names) {
+  const used = new Set();
+  return names.map((n) => {
+    const t = tokens(n);
+    let k = 1;
+    let id = t.slice(0, k).join('-');
+    while (used.has(id) && k < t.length) id = t.slice(0, ++k).join('-');
+    for (let c = 2; used.has(id); c++) id = `${t.join('-')}-${c}`;
+    used.add(id);
+    return id;
+  });
+}
+
 export const bidang = raw.map((b, i) => {
   const base = `bidang/${b.slug}`;
-  let nBph = 0;
-  let nStaf = 0;
-  const mapBph = (p, kind) => {
-    const idx = kind === 'staf' ? ++nStaf : ++nBph;
-    return { ...p, angkatan: A24, kind, photo: `${base}/bph/${kind === 'staf' ? 'staf' : 'bph'}-${pad(idx)}` };
-  };
-  const heads = b.bph.heads.map((p) => mapBph(p, 'bph'));
-  const wakil = b.bph.wakil.map((p) => mapBph(p, 'bph'));
-  const staf = b.bph.staf.map((p) => mapBph(p, 'staf'));
+  const bphAll = [...b.bph.heads, ...b.bph.wakil];
+  const bphIds = shortNames(bphAll.map((p) => p.name));
+  const stafIds = shortNames(b.bph.staf.map((p) => p.name));
+  const bpIds = shortNames(b.bp);
+  const mapBph = (p, kind, id) => ({ ...p, angkatan: A24, kind, photo: `${base}/bph/${kind === 'staf' ? 'staf' : 'bph'}-${id}` });
+  const heads = b.bph.heads.map((p, j) => mapBph(p, 'bph', bphIds[j]));
+  const wakil = b.bph.wakil.map((p, j) => mapBph(p, 'bph', bphIds[b.bph.heads.length + j]));
+  const staf = b.bph.staf.map((p, j) => mapBph(p, 'staf', stafIds[j]));
   return {
     ...b,
     index: i,
     team: `${base}/team`,
     heroSub: b.heroSub ?? b.abbr,
     bph: { heads, wakil, staf },
-    bp: b.bp.map((name, j) => ({ name, angkatan: A25, photo: `${base}/bp/bp-${pad(j + 1)}` })),
+    bp: b.bp.map((name, j) => ({ name, angkatan: A25, photo: `${base}/bp/bp-${bpIds[j]}` })),
     programs: b.programs.map((p, j) => ({ ...p, photo: `${base}/proker-${pad(j + 1)}`, bidang: b.slug })),
   };
 });
