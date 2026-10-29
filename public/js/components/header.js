@@ -8,7 +8,6 @@
 import { html } from '../util.js';
 import { nav } from '../data/site.js';
 import { ph } from './image.js';
-import { logoMark } from './decor.js';
 import { icon } from './icons.js';
 
 export function headerMarkup() {
@@ -16,7 +15,6 @@ export function headerMarkup() {
     <div class="site-header__bar">
       <a class="brand" href="/" data-link aria-label="IMTI FTUI 2026 — kembali ke beranda">
         <span class="brand__mark">
-          ${logoMark}
           ${ph({ key: 'brand/logo-header', kind: 'logo', variant: 'logo', cls: 'ph--silent brand__img', fit: 'contain', eager: true })}
         </span>
         <span class="brand__name">IMTI FTUI 2026</span>

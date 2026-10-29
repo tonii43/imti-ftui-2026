@@ -1,4 +1,4 @@
-# Daftar aset gambar (243 file)
+# Daftar aset gambar (244 file)
 
 > Dibuat otomatis oleh `npm run assets`. Letakkan file persis di path & nama di bawah.
 > Format utama ditulis di kolom *File*; ekstensi lain yang juga terbaca otomatis: foto → `.jpg .jpeg .png .webp`, potongan → `.png .webp`, logo/ilustrasi → `.png .svg .webp`.
@@ -10,6 +10,7 @@
 |---|---|---|
 | `public/assets/brand/logo-header.png` | 256×256 px | Logo lingkaran di header (hitam-navy, ikon kuning). Latar transparan. |
 | `public/assets/brand/logo-lotus.png` | 1600×960 px | Logo bunga teratai + riak air, WARNA PUTIH, latar transparan. Dipakai di Home (Makna) & diagram Makna Logo. |
+| `public/assets/brand/favicon.png` | 512×512 px | Ikon tab browser (favicon) — versi persegi dari logo IMTI. Latar boleh transparan. |
 | `public/assets/brand/og-image.jpg` | 1200×630 px | Gambar pratinjau saat link dibagikan (WhatsApp/IG). Rasio 1.91:1. |
 
 ## Foto

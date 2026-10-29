@@ -44,9 +44,3 @@ export const rings = (cls = '', style = '') =>
     <circle cx="200" cy="200" r="200" fill="currentColor" opacity=".38"/>
     <circle cx="200" cy="200" r="140" fill="currentColor" opacity=".38"/>
     <circle cx="200" cy="200" r="82" fill="#0565DB" opacity=".55"/></svg>`);
-
-/** Logo bawaan (placeholder header) — ikon lingkaran navy dengan panah melingkar kuning */
-export const logoMark = raw(`<svg class="logo-fallback" viewBox="0 0 64 64" aria-hidden="true">
-  <circle cx="32" cy="32" r="31" fill="#011A38" stroke="#FFF59B" stroke-width="2"/>
-  <path d="M44 22a16 16 0 1 0 2.5 12" fill="none" stroke="#FFF59B" stroke-width="4" stroke-linecap="round"/>
-  <path d="M20 32h12" stroke="#FFF59B" stroke-width="4" stroke-linecap="round"/></svg>`);

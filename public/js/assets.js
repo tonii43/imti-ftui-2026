@@ -50,6 +50,7 @@ export function collectAssets() {
 
   add('Brand', GLOBAL.logoHeader.key, 'logo', 'Logo lingkaran di header (hitam-navy, ikon kuning). Latar transparan.', '256×256 px');
   add('Brand', GLOBAL.logoLotus.key, 'logo', 'Logo bunga teratai + riak air, WARNA PUTIH, latar transparan. Dipakai di Home (Makna) & diagram Makna Logo.', '1600×960 px');
+  add('Brand', 'brand/favicon', 'logo', 'Ikon tab browser (favicon) — versi persegi dari logo IMTI. Latar boleh transparan.', '512×512 px');
   add('Brand', GLOBAL.ogImage.key, 'photo', 'Gambar pratinjau saat link dibagikan (WhatsApp/IG). Rasio 1.91:1.', '1200×630 px');
   add('Foto', GLOBAL.groupPhoto.key, 'photo', 'Foto bersama seluruh fungsionaris (Home hero + About). Landscape.', '3840×2200 px');
   add('Foto', GLOBAL.ketuaWakil.key, 'photo', 'Foto Ketua & Wakil Ketua Lembaga dalam satu frame lebar (rasio ±3:1).', '2700×900 px');
