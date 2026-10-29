@@ -248,16 +248,16 @@
 |---|---|---|
 | `public/assets/bidang/kestari/team.jpg` | 2400×1600 px | Foto tim bidang (dipakai di Home, About, hero halaman bidang, Recap, IMTI Center). Rasio ±3:2. |
 | `public/assets/bidang/kestari/proker-01.jpg` | 1600×1000 px | Foto program kerja "Timeline Control" (opsional — kalau belum ada, otomatis memakai foto tim). |
-| `public/assets/bidang/kestari/bph/bph-01.png` | 800×1000 px | Kepala Bidang: [Nama Kepala Bidang] — foto potongan badan (latar transparan), kepala di atas. |
-| `public/assets/bidang/kestari/bph/bph-02.png` | 800×1000 px | Wakil Kepala Bidang: [Nama Wakil Kepala Bidang] — foto potongan badan (latar transparan), kepala di atas. |
-| `public/assets/bidang/kestari/bp/bp-01.jpg` | 800×960 px | Badan Pengurus: [Nama Badan Pengurus] — foto close-up wajah, rasio 5:6. |
-| `public/assets/bidang/kestari/bp/bp-02.jpg` | 800×960 px | Badan Pengurus: [Nama Badan Pengurus] — foto close-up wajah, rasio 5:6. |
-| `public/assets/bidang/kestari/bp/bp-03.jpg` | 800×960 px | Badan Pengurus: [Nama Badan Pengurus] — foto close-up wajah, rasio 5:6. |
-| `public/assets/bidang/kestari/bp/bp-04.jpg` | 800×960 px | Badan Pengurus: [Nama Badan Pengurus] — foto close-up wajah, rasio 5:6. |
-| `public/assets/bidang/kestari/bp/bp-05.jpg` | 800×960 px | Badan Pengurus: [Nama Badan Pengurus] — foto close-up wajah, rasio 5:6. |
-| `public/assets/bidang/kestari/bp/bp-06.jpg` | 800×960 px | Badan Pengurus: [Nama Badan Pengurus] — foto close-up wajah, rasio 5:6. |
-| `public/assets/bidang/kestari/bp/bp-07.jpg` | 800×960 px | Badan Pengurus: [Nama Badan Pengurus] — foto close-up wajah, rasio 5:6. |
-| `public/assets/bidang/kestari/bp/bp-08.jpg` | 800×960 px | Badan Pengurus: [Nama Badan Pengurus] — foto close-up wajah, rasio 5:6. |
+| `public/assets/bidang/kestari/bph/bph-01.png` | 800×1000 px | Kepala Bidang: Rifdah Aufa Destiani — foto potongan badan (latar transparan), kepala di atas. |
+| `public/assets/bidang/kestari/bph/bph-02.png` | 800×1000 px | Wakil Kepala Bidang: Kanaya Sadina Azfa — foto potongan badan (latar transparan), kepala di atas. |
+| `public/assets/bidang/kestari/bp/bp-01.jpg` | 800×960 px | Badan Pengurus: Ahmad Faisa Bahy — foto close-up wajah, rasio 5:6. |
+| `public/assets/bidang/kestari/bp/bp-02.jpg` | 800×960 px | Badan Pengurus: Yoggy Arbiansyah — foto close-up wajah, rasio 5:6. |
+| `public/assets/bidang/kestari/bp/bp-03.jpg` | 800×960 px | Badan Pengurus: Sheryl Natasha Alliah — foto close-up wajah, rasio 5:6. |
+| `public/assets/bidang/kestari/bp/bp-04.jpg` | 800×960 px | Badan Pengurus: Izyani Tri Maulidiyah — foto close-up wajah, rasio 5:6. |
+| `public/assets/bidang/kestari/bp/bp-05.jpg` | 800×960 px | Badan Pengurus: Yosafat Justin Erman Sirait — foto close-up wajah, rasio 5:6. |
+| `public/assets/bidang/kestari/bp/bp-06.jpg` | 800×960 px | Badan Pengurus: Anantazeina Adrian Putra — foto close-up wajah, rasio 5:6. |
+| `public/assets/bidang/kestari/bp/bp-07.jpg` | 800×960 px | Badan Pengurus: Naura Raya Nugraha — foto close-up wajah, rasio 5:6. |
+| `public/assets/bidang/kestari/bp/bp-08.jpg` | 800×960 px | Badan Pengurus: Nadya Octavia Munte — foto close-up wajah, rasio 5:6. |
 
 ## Bidang · Penelitian & Pengembangan
 

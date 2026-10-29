@@ -27,7 +27,7 @@ function hero() {
       <p class="home-hero__tag" data-reveal><span class="ts">${site.hashtag}</span><span class="rule" aria-hidden="true"></span></p>
       <div class="home-hero__cta" data-reveal>
         <a class="btn btn--yellow" href="/about" data-link data-magnetic="8">Get to know us ${arrowBtn}</a>
-        <a class="btn btn--ghost" href="/dashboard" data-link data-magnetic="8">Lihat dashboard</a>
+        <a class="btn btn--ghost" href="/imti-center" data-link data-magnetic="8">IMTI Center</a>
       </div>
       <div class="pillars" data-reveal role="tablist" aria-label="Tiga pilar IMTI FTUI 2026">
         ${pillars.map(

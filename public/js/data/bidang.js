@@ -237,7 +237,6 @@ const raw = [
     programs: [{ title: 'ShopAtWeerus', tri: 'Triwulan 1 – Triwulan 3', desc: PROGRAM_PLACEHOLDER }],
   },
   {
-    /* Layout halaman Kestari belum ada di folder desain — nama orang masih placeholder. */
     slug: 'kestari',
     chip: 'Kestari',
     abbr: 'Kestari',
@@ -249,11 +248,14 @@ const raw = [
     desc: 'Bidang yang memiliki tanggung jawab atas administrasi, inventarisasi, dan timeline IMTI serta berperan dalam menjaga hubungan fungsionaris antar lembaga.',
     service: 'Peminjaman inventaris',
     bph: {
-      heads: [{ name: '[Nama Kepala Bidang]', role: 'Kepala Bidang' }],
-      wakil: [{ name: '[Nama Wakil Kepala Bidang]', role: 'Wakil Kepala Bidang' }],
+      heads: [{ name: 'Rifdah Aufa Destiani', role: 'Kepala Bidang' }],
+      wakil: [{ name: 'Kanaya Sadina Azfa', role: 'Wakil Kepala Bidang' }],
       staf: [],
     },
-    bp: Array.from({ length: 8 }, () => '[Nama Badan Pengurus]'),
+    bp: [
+      'Ahmad Faisa Bahy', 'Yoggy Arbiansyah', 'Sheryl Natasha Alliah', 'Izyani Tri Maulidiyah', 'Yosafat Justin Erman Sirait', 'Anantazeina Adrian Putra',
+      'Naura Raya Nugraha', 'Nadya Octavia Munte',
+    ],
     programs: [{ title: 'Timeline Control', tri: 'Triwulan 1 – Triwulan 3', desc: PROGRAM_PLACEHOLDER }],
   },
   {

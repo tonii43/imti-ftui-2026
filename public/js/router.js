@@ -14,7 +14,6 @@ const routes = [
   { name: 'home', re: /^\/$/, load: () => import('./pages/home.js') },
   { name: 'about', re: /^\/about$/, load: () => import('./pages/about.js') },
   { name: 'bidang', re: /^\/about\/([a-z0-9-]+)$/, keys: ['slug'], load: () => import('./pages/bidang.js') },
-  { name: 'dashboard', re: /^\/dashboard$/, load: () => import('./pages/dashboard.js') },
   { name: 'center', re: /^\/imti-center$/, load: () => import('./pages/center.js') },
   { name: 'recap', re: /^\/recap$/, load: () => import('./pages/recap.js') },
   { name: 'contact', re: /^\/contact$/, load: () => import('./pages/contact.js') },

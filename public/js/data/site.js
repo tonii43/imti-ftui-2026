@@ -15,7 +15,6 @@ export const site = {
 export const nav = [
   { key: 'home', label: 'Home', href: '/' },
   { key: 'about', label: 'About', href: '/about' },
-  { key: 'dashboard', label: 'Dashboard', href: '/dashboard' },
   { key: 'center', label: 'IMTI Center', href: '/imti-center' },
   { key: 'recap', label: 'Recap', href: '/recap' },
   { key: 'contact', label: 'Contact', href: '/contact' },

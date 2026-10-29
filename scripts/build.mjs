@@ -22,7 +22,6 @@ let tpl = await readFile(join(dist, 'index.html'), 'utf8');
 const routes = [
   { path: '/', title: null, desc: site.description },
   { path: '/about', title: 'About', desc: 'Kenali IMTI FTUI 2026: dua pemandu lembaga, dua belas bidang, dan ratusan fungsionaris.' },
-  { path: '/dashboard', title: 'Dashboard', desc: 'Dashboard IMTI FTUI 2026 — segera hadir.' },
   { path: '/imti-center', title: 'IMTI Center', desc: 'Satu pintu untuk semua layanan dan tautan penting IMTI FTUI 2026.' },
   { path: '/recap', title: 'Recap', desc: 'Jejak program kerja dari 12 bidang IMTI FTUI 2026.' },
   { path: '/contact', title: 'Contact', desc: 'Hubungi IMTI FTUI 2026.' },
