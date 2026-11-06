@@ -61,7 +61,7 @@ export const contactPersons = [
     line: 'fathimaxhasna',
     role: 'BPH Humas IMTI 2026 (Media)',
     photo: 'contact/ima',
-    fallback: 'bidang/humas/bph/bph-02',
+    fallback: 'bidang/humas/bph/bph-fathima',
   },
   {
     nick: 'Dhika TI’24',
@@ -70,7 +70,7 @@ export const contactPersons = [
     line: 'keanendra15',
     role: 'BPH Humas IMTI 2026 (Relasi)',
     photo: 'contact/dhika',
-    fallback: 'bidang/humas/bph/bph-04',
+    fallback: 'bidang/humas/bph/bph-andhika',
   },
 ];
 
