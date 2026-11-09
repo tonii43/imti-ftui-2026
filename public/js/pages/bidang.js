@@ -5,7 +5,7 @@
    ========================================================== */
 
 import { html, mixLines } from '../util.js';
-import { bidang, getBidang, neighbors, PLACEHOLDER_PROGRAM } from '../data/bidang.js';
+import { bidang, getBidang, neighbors } from '../data/bidang.js';
 import { ph } from '../components/image.js';
 import { icon } from '../components/icons.js';
 
@@ -30,11 +30,11 @@ function person(p) {
 
 function programCard(p, i) {
   const tone = i === 1 ? 'yellow' : 'mist';
-  const href = p.placeholder ? '/recap' : `/recap?bidang=${p.bidang}`;
+  const href = `/recap?bidang=${p.bidang}`;
   return html`<a class="kcard kcard--${tone}" href="${href}" data-link data-reveal="up" data-tilt="5">
     <span class="kcard__top"><span class="pill pill--navy">PROGRAM KERJA</span><span class="circ-btn circ-btn--white" aria-hidden="true">${icon.arrowUpRight}</span></span>
     <h3 class="kcard__title">${p.title}</h3>
-    <p class="kcard__desc">${p.placeholder ? p.desc : p.tri}</p>
+    <p class="kcard__desc">${p.tri}</p>
     <span class="kcard__img">${ph({ key: p.photo ?? 'x', fallbacks: p.bidangTeam ? [p.bidangTeam] : [], alt: '', cls: 'kcard__ph' })}</span>
   </a>`;
 }
@@ -54,10 +54,7 @@ export default {
     const { prev, next } = neighbors(b.slug);
     const { heads, wakil, staf } = b.bph;
 
-    // tepat 3 kartu program: isi dengan placeholder bila belum ada
-    const progs = [...b.programs.map((p) => ({ ...p, bidangTeam: b.team })), PLACEHOLDER_PROGRAM, PLACEHOLDER_PROGRAM]
-      .slice(0, 3)
-      .map((p) => (p.placeholder ? { ...p, photo: `${b.team}`, bidangTeam: null } : p));
+    const progs = b.programs.map((p) => ({ ...p, bidangTeam: b.team }));
 
     return html`<div class="page page--bidang" data-bidang="${b.slug}">
       <div class="bswitch" data-reveal="fade">

@@ -20,7 +20,7 @@ function item(p) {
     <div class="ritem__text">
       <p class="ritem__by ts">${b.name} IMTI FTUI</p>
       <h2 class="ritem__title">${p.title}</h2>
-      <p class="ritem__desc">${p.desc}</p>
+      ${p.desc ? html`<p class="ritem__desc">${p.desc}</p>` : ''}
       <p class="ritem__tri">${p.tri}</p>
     </div>
   </article>`;

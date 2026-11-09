@@ -15,8 +15,6 @@ import { slugify } from '../util.js';
 const A24 = 'Teknik Industri 2024';
 const A25 = 'Teknik Industri 2025';
 
-const PROGRAM_PLACEHOLDER = '[Deskripsi singkat 2–3 kalimat: tujuan acara, siapa yang terlibat, dan dampaknya bagi warga TI.]';
-
 const raw = [
   {
     slug: 'humas',
@@ -44,7 +42,7 @@ const raw = [
       'Fari Wildan Marleman', 'Nindya Anindita D.', 'Nazla Rasyifa', 'Muhammad Ilham Nursyafat', 'Rifa Zakee Az-Zahra', 'Khairiya Diraya Hidayat',
       'Adra Keira Arto', 'Rifda Aqila Putri W.', 'Muhammad Dimas Arya Putra', 'Catherine Ivana',
     ],
-    programs: [{ title: 'Teknik Industri Open House', tri: 'Triwulan 2', desc: PROGRAM_PLACEHOLDER }],
+    programs: [{ title: 'Teknik Industri Open House', tri: 'Triwulan 2' }],
   },
   {
     slug: 'kastrat',
@@ -70,7 +68,7 @@ const raw = [
       'Nayla Andriani', 'Wisnu Dharma Wicaksono', 'Gianina Heening P. R. S.', 'Aditya Pasha Ramadhan', 'Goklas Jubelzasar T.', 'Rafi Baharizqi Wibowo',
       'Ahmad Rozaan',
     ],
-    programs: [{ title: 'Infografis x IMDC', tri: 'Triwulan 1 – Triwulan 3', desc: PROGRAM_PLACEHOLDER }],
+    programs: [{ title: 'Infografis x IMDC', tri: 'Triwulan 1 – Triwulan 3' }],
   },
   {
     slug: 'sosma',
@@ -96,7 +94,7 @@ const raw = [
       'Nadine Azzahra P. D.', 'Indira Danastri Hadisoerjo', 'Muhamad Rizky Farel', 'Dea Putri Dwinanda', 'Elisha Rahmania Zahia', 'Mobarez Al Mattazora',
       'Raffael Targoardo G. M.', 'Haya Izzah Mahira', 'Abigail Rotua Andini Pardede', 'Muhammad Dzaki Event P.',
     ],
-    programs: [{ title: 'Volunteering Center', tri: 'Triwulan 2 – Triwulan 3', desc: PROGRAM_PLACEHOLDER }],
+    programs: [{ title: 'Volunteering Center', tri: 'Triwulan 2 – Triwulan 3' }],
   },
   {
     slug: 'iptek',
@@ -122,7 +120,7 @@ const raw = [
       'Bunga Alexandra M.', 'Aisyah Zae Ramadhany', 'Raden Roro G. A.', 'Renaia Shadiya V.', 'Yonatan Sardo S.', 'Raissa Aliya Putri',
       'Chandra Ardywinata P.', 'Taranita Putri M. G.', 'Putu Anggeni A. P.', 'Muhammad Rafi Al Ghazali M.',
     ],
-    programs: [{ title: 'ISEEC UI', tri: 'Triwulan 3', desc: PROGRAM_PLACEHOLDER }],
+    programs: [{ title: 'ISEEC UI', tri: 'Triwulan 3' }],
   },
   {
     slug: 'ikhtiar',
@@ -181,7 +179,7 @@ const raw = [
       'Kirana Azizah', 'Mufidah Reyhanun', 'Rafif Izzu F.', 'Hezkiel', 'Marsa Putri I.', 'Jason Alexsandro P. M.',
       'Jelin Theresia I. S.', 'Diandra Abidzar Z. A.',
     ],
-    programs: [{ title: 'Waktu Industri Berbincang (WIB)', tri: 'Triwulan 2', desc: PROGRAM_PLACEHOLDER }],
+    programs: [{ title: 'Waktu Industri Berbincang (WIB)', tri: 'Triwulan 2' }],
   },
   {
     slug: 'siwa',
@@ -210,7 +208,7 @@ const raw = [
       'Patricia Putri Noveli', 'Radityo El R.', 'Luvena Kayla Ahmad', 'Muhammad Marcel Ihsan', 'Achmad Affan Darrell', 'Putu Kiera Oyca Putri',
       'Arfan Rasyid P.', 'Jessica Merry H.', 'Muhammad Daffa A. A.',
     ],
-    programs: [{ title: 'Art Day TI', tri: 'Triwulan 3', desc: PROGRAM_PLACEHOLDER }],
+    programs: [{ title: 'Art Day TI', tri: 'Triwulan 3' }],
   },
   {
     slug: 'wirus',
@@ -236,7 +234,7 @@ const raw = [
       'Rania Alika Larasati', 'Muhammad Aslam Habibulloh', 'Keindra Lutfirrahman Firdausy', 'Arfan Ghani Santoso', 'Elysia Kosasih', 'Ramadan Putera Kadarsan',
       'Maliq Jibran Solihin Kalla', 'Farlianda Farah Rizqita', 'Chelsea Berliana Halim', 'Nur Muhammad Wafiq Rizqullah',
     ],
-    programs: [{ title: 'ShopAtWeerus', tri: 'Triwulan 1 – Triwulan 3', desc: PROGRAM_PLACEHOLDER }],
+    programs: [{ title: 'ShopAtWeerus', tri: 'Triwulan 1 – Triwulan 3' }],
   },
   {
     slug: 'kestari',
@@ -258,7 +256,7 @@ const raw = [
       'Ahmad Faisa Bahy', 'Yoggy Arbiansyah', 'Sheryl Natasha Alliah', 'Izyani Tri Maulidiyah', 'Yosafat Justin Erman Sirait', 'Anantazeina Adrian Putra',
       'Naura Raya Nugraha', 'Nadya Octavia Munte',
     ],
-    programs: [{ title: 'Timeline Control', tri: 'Triwulan 1 – Triwulan 3', desc: PROGRAM_PLACEHOLDER }],
+    programs: [{ title: 'Timeline Control', tri: 'Triwulan 1 – Triwulan 3' }],
   },
   {
     slug: 'litbang',
@@ -285,7 +283,7 @@ const raw = [
       'Salsabila Azarine D.', 'Rama Zaki A.', 'Aiwis Dewi Rambing', 'Muhammad Omar H. P.', 'Syifa Nadya', 'Muhammad Luthfi H.',
       'Ferents Mika Yeeps', 'Riquello Rammstein T.', 'Firyaal Nur Azizah',
     ],
-    programs: [{ title: 'Blueprint', tri: 'Triwulan 1 – Triwulan 3', desc: PROGRAM_PLACEHOLDER }],
+    programs: [{ title: 'Blueprint', tri: 'Triwulan 1 – Triwulan 3' }],
   },
   {
     slug: 'kebend',
@@ -307,7 +305,7 @@ const raw = [
       'Gianlucca Aryaputra K.', 'Audrey Barus', 'Aaliyah Rahman', 'Nabeel Ahmad Z.', 'Dafa Mawla Rahman', 'Jasmine Rania M.',
       'Serina Cahya H.', 'Kheyandra Pranidhana M.',
     ],
-    programs: [{ title: 'Pengelolaan Keuangan IMTI', tri: 'Triwulan 1 – Triwulan 3', desc: PROGRAM_PLACEHOLDER }],
+    programs: [{ title: 'Pengelolaan Keuangan IMTI', tri: 'Triwulan 1 – Triwulan 3' }],
   },
   {
     slug: 'akpro',
@@ -333,7 +331,7 @@ const raw = [
       'Muhammad Ihsan Yusuf', 'Aleesha Livinta Affat', 'Stefanus Panji Adhi Nugraha Putra', 'Sisca Valencia', 'Marsya Putri Amanda', 'Ahmad Rifqi Fauzan',
       'Aliyya Faiza Wibowo', 'Hans Ottovius Lumbanraja', 'Auralia Sabrina',
     ],
-    programs: [{ title: 'Ekskursi', tri: 'Triwulan 2', desc: PROGRAM_PLACEHOLDER }],
+    programs: [{ title: 'Ekskursi', tri: 'Triwulan 2' }],
   },
 ];
 
@@ -390,8 +388,3 @@ export const neighbors = (slug) => {
   return { prev: bidang[(i - 1 + bidang.length) % bidang.length], next: bidang[(i + 1) % bidang.length] };
 };
 
-export const PLACEHOLDER_PROGRAM = {
-  title: '[Nama Program Kerja]',
-  desc: '[Satu kalimat tujuan program kerja.]',
-  placeholder: true,
-};
